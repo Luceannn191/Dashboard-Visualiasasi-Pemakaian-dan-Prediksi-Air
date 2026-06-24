@@ -1,0 +1,6 @@
+{
+  "name": "SCADA Command Center Tirta Musi",
+  "description": "Sistem monitoring SCADA Command Center dan analisis kubikasi air Perumda Tirta Musi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
