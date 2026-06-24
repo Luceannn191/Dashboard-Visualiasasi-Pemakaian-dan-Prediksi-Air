@@ -129,11 +129,11 @@ export default function App() {
 
       if (dataAktualSektorIni.length >= 2 && aiMode) {
         try {
-          const response = await fetch('http://localhost:5000/api/prediksi', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ data_historis: dataAktualSektorIni }),
-          });
+          const response = await fetch('/api/prediksi', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ data_historis: dataAktualSektorIni }),
+});
           const resJson = await response.json();
           if (resJson.status === 'sukses') {
             const listPrediksi: number[] = resJson.hasil_prediksi_12_bulan;
