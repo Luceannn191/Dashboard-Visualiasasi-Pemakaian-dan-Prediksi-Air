@@ -48,11 +48,11 @@ const AdminForm = () => {
     }
     setIsLoading(true);
     try {
-      const response = await fetch('http://localhost:5000/api/prediksi', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ data_historis: dataUpdate }),
-      });
+      const response = await fetch('/api/prediksi', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ data_historis: dataUpdate }),
+});
       const data = await response.json();
       if (data.status === 'sukses') {
         setHasilPrediksi(data.hasil_prediksi_12_bulan);
