@@ -1,5 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import logoTirtaMusi from './image.png';
 import AdminForm from './AdminForm';
 import AdminGate from './AdminGate.tsx';
 import { motion, AnimatePresence } from 'motion/react';
@@ -224,7 +225,7 @@ export default function App() {
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-white border border-slate-200 flex items-center justify-center shadow-sm relative overflow-hidden group">
                     <span className="absolute inset-0 bg-slate-50 transform rotate-12 translate-y-6 group-hover:translate-y-[-24px] transition-transform duration-700 ease-out"></span>
-                    <img src="image.png" alt="Tirta Musi" className="w-6 h-6 object-contain relative z-10" />
+                    <img src={logoTirtaMusi} alt="Tirta Musi" className="w-6 h-6 object-contain relative z-10" />
                   </div>
                   <div>
                     <h1 className="text-lg font-bold text-slate-900 tracking-tight leading-none">
